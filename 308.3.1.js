@@ -86,24 +86,37 @@
 // and incrementing from there
 // Bullet 3: As soon as you find the prime number, log that number and exit the loop
 
-let n = 81; // Declare an arbitrary number 'n'
-let isPrime = true // assume the number is prime, unless I prove otherwise
-// Remember you need the computer to explitly tell you yes or no based on code
+// let n = 81; // Declare an arbitrary number 'n'
+// let isPrime = true // assume the number is prime, unless I prove otherwise
+// // Remember you need the computer to explitly tell you yes or no based on code
 
-//prime numbers are greater than 1, remember?
-if (n <= 1) {
-    isPrime = false; //If less than 1, then it's not prime, so false
-} else { //This portion runs when the if statement if false
-    for (let d = 2; d < n; d++) { //d is basically starting at 2, because it's not 1, then go up and compare to n
-        if (n % d === 0) {
-            isPrime = false;
-            break; // stop checking
-        }
-    }
-}
+// //prime numbers are greater than 1, remember?
+// if (n <= 1) {
+//     isPrime = false; //If less than 1, then it's not prime, so false
+// } else { //This portion runs when the if statement if false
+//     for (let d = 2; d < n; d++) { //d is basically starting at 2, because it's not 1, then go up and compare to n
+//         if (n % d === 0) {
+//             isPrime = false;
+//             break; // stop checking
+//         }
+//     }
+// }
 
-console.log(isPrime);
+// console.log(isPrime);
 
 // Part II is complete, it's a lot easier going one by one
 
 // Part III: Feeling Loopy
+//CSVs are used when you download instagram information
+//copy and past the line and make it a const, try to break it from the n
+// Remember it's a string so put it in quotes
+// It's similar to excel with rows and columns
+// This is confusing, go slow. 
+const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+
+//Loop through the characters of a given CSV string.
+// The .length returns the length of the string object
+for (let i = 0; i < csv.length; i++) {
+    const ch = csv[i];
+    console.log(ch);
+}
