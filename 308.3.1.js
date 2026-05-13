@@ -156,3 +156,5 @@ for (let i = 0; i < csv.length; i++) {
 }
 
 // I need to practice this more and talk it out loud, rubber ducky
+
+//practice this with your IG data when you have time
