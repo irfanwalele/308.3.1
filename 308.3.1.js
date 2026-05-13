@@ -87,12 +87,14 @@
 // Bullet 3: As soon as you find the prime number, log that number and exit the loop
 
 let n = 81; // Declare an arbitrary number 'n'
-let isPrime = true // I'm starting with a nonprime number
+let isPrime = true // assume the number is prime, unless I prove otherwise
+// Remember you need the computer to explitly tell you yes or no based on code
 
+//prime numbers are greater than 1, remember?
 if (n <= 1) {
-    isPrime = false;
-} else {
-    for (let d = 2; d < n; d++) {
+    isPrime = false; //If less than 1, then it's not prime, so false
+} else { //This portion runs when the if statement if false
+    for (let d = 2; d < n; d++) { //d is basically starting at 2, because it's not 1, then go up and compare to n
         if (n % d === 0) {
             isPrime = false;
             break; // stop checking
@@ -101,3 +103,7 @@ if (n <= 1) {
 }
 
 console.log(isPrime);
+
+// Part II is complete, it's a lot easier going one by one
+
+// Part III: Feeling Loopy
