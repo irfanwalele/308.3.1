@@ -39,13 +39,33 @@
 //Bullet 3
 //If a number id divisible by 5, log "Buzz"
 //Do the same, but add the else if
-for (let i =1; i <= 100; i++) {
-    if (i % 3 === 0) {
-        console.log("Fizz");
-    } else if (i % 5 === 0) {
-        console.log("Buzz");
+// for (let i =1; i <= 100; i++) {
+//     if (i % 3 === 0) {
+//         console.log("Fizz");
+//     } else if (i % 5 === 0) {
+//         console.log("Buzz");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+//Bullet 4 
+// If a number is divisible by both 3 and 5, log "Fizz Buzz"
+// How do I know if it's divided by both numbers? Wouldn't that just be 15?
+// I think it's probably 15 since it's the lowest multiple of 3 and 5
+// I'll need 2 else if  loops, the else won't have a condition
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+        console.log("Fizz Buzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz")
+    } else if (i % 5 ===0) {
+        console.log("Buzz")
     } else {
-        console.log(i);
+        console.log(i)
     }
 }
 
+
+// Success! Part 1 is complete!
+// commit to github
